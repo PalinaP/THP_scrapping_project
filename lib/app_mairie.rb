@@ -4,7 +4,7 @@ require 'open-uri' #open online webpage
 
 # ----------------
 
-def get_townhall_urls # -- récupère les URLs de chaque ville du Val d'Oise
+def get_townhall_urls # -- récupère les URLs de chaque ville des Bouches du Rhônes
 	
 	# First, select department 13 | Bouches-du-Rhône
 	department_array = []
@@ -46,7 +46,7 @@ def get_townhall_urls # -- récupère les URLs de chaque ville du Val d'Oise
  	#gather city name and city email in a hash city_name_email_hash
  	city_name_email_hash = city_name_array.zip(city_email_array).to_h
 
- 	puts city_name_email_hash
+ 	return city_name_email_hash
 
 end
 
